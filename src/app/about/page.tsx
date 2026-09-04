@@ -1,6 +1,6 @@
 import About from '@/components/sections/About/About';
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <div>
       <main>
