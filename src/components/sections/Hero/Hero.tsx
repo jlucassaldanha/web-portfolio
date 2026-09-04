@@ -31,9 +31,6 @@ export default function Hero() {
           </Avatar>
         </div>
       </div>
-
-      
-      
     </div>
   )
 }
