@@ -26,7 +26,7 @@ export default function Hero() {
 
         <div className='w-full md:w-1/3 flex justify-center md:justify-end'>
           <Avatar className='w-56 h-56 md:w-80 md:h-80'>
-            <AvatarImage src="profile1.jpg"/>
+            <AvatarImage src="profile.jpg"/>
             <AvatarFallback>JL</AvatarFallback>
           </Avatar>
         </div>
