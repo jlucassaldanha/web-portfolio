@@ -1,41 +1,52 @@
 import Image from 'next/image';
-import profilePic from "../../../public/profile.jpg"
-import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
 import { TypographyH4 } from '../ui/typography';
 import { FaGithub } from "react-icons/fa";
+import DeactivatableLink from './DeactivatableLink';
+import { redirect } from 'next/navigation';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Link from 'next/link';
 
-export default function ProjectCard() {
+interface ProjectCardProps {
+  title: string
+  description: string
+  repoUrl: string
+  deployUrl?: string
+  img: string | StaticImport
+}
+
+export default function ProjectCard({ title, description, repoUrl, deployUrl, img }: ProjectCardProps) {
+  const deployed = deployUrl ? true : false
+
   return (
-    <div>
-      <div className="relative mx-auto md:min-w-100 md:max-w-250 md:flex border-b py-1">
-        <Link href="" target='_blank' className='md:w-1/3'>
+    <div className="relative mx-auto md:min-w-100 md:max-w-250 md:flex border-b pb-3">
+      <div className='md:w-1/3'>
+        <DeactivatableLink href={deployUrl} target='_blank' disabled={!deployed}>
           <Image
-            src={profilePic}
-            alt="Event cover"
-            className="relative z-20 aspect-video object-cover rounded-md "
+            src={img}
+            alt="Project cover"
+            className="relative z-20 aspect-video object-cover rounded-md"
           />
-        </Link>
-        
-        <div className='px-5 md:w-2/3'>
-          <Link href="" target='_blank'>
+        </DeactivatableLink>
+      </div>
+      
+      <div className='px-5 md:w-2/3'>
+        <DeactivatableLink href={deployUrl} target='_blank' disabled={!deployed}>
+          {deployed && (
             <div className='flex justify-end px-5 pt-5 md:pt-2 w-full'>
               <Badge variant="secondary" >Deployed</Badge>
             </div>
+          )}
 
-            <TypographyH4 className='pb-5'>Teste</TypographyH4>
-            
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ad quis minima voluptatibus, repellendus nulla dolores.
-            </div>
+          <TypographyH4 className='py-5'>{title}</TypographyH4>
+          
+          <div>{description}</div>
+        </DeactivatableLink>
+
+        <div className='flex justify-end p-5'>
+          <Link href={repoUrl} target='_blank' className='flex items-center gap-1 bg-primary rounded-md text-primary-foreground px-2 py-1'>
+            Repositório <FaGithub />
           </Link>
-
-          <div className='flex justify-end p-5'>
-            <Button>
-              Repositório <FaGithub />
-            </Button>
-          </div>
         </div>
       </div>
     </div>
