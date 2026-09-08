@@ -10,8 +10,18 @@ export default function About() {
       </div>
       <div className='flex flex-col md:flex-row items-center gap-12 md:gap-8 bg-secondary text-secondary-foreground p-10'>
         <div className='w-full text-center md:text-left'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit itaque accusamus, distinctio et nesciunt illo iure. Ex quas quidem praesentium veniam? Sapiente eaque exercitationem sunt earum magnam iure officia. <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nam eaque voluptas quis saepe vitae id eveniet. Deserunt unde consectetur quibusdam natus ipsa autem nulla numquam doloremque nemo, non dolorem.
+          <p>
+            Minha experiência abrange o desenvolvimento frontend e backend. Possuo
+            vivência prática na construção de interfaces com Next.js e React, e
+            também no desenvolvimento de APIs em C# (ecossistema .NET) e Python
+            (FastAPI/Flask).
+          </p>
+
+          <p>
+            Essa base técnica me proporciona uma visão completa do ciclo de vida
+            do produto, permitindo a entrega de projetos integrados de ponta a
+            ponta.
+          </p>
         </div>
       </div>
     </div>

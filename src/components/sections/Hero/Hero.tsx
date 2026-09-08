@@ -1,6 +1,9 @@
+"use client"
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { TypographyH1 } from '@/components/ui/typography';
+import { redirect } from 'next/navigation';
 
 export default function Hero() {
   return (
@@ -16,11 +19,16 @@ export default function Hero() {
           </div>
 
           <div className='text-lg text-muted-foreground leading-relaxed'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quaerat perspiciatis minima neque nobis, animi amet quam, magnam reiciendis doloremque recusandae libero rerum hic doloribus commodi sed exercitationem suscipit eligendi!
+            <p>
+              Desenvolvedor de software apaixonado por criar soluções e resolver
+              problemas do mundo real.
+            </p>
+
+            <p>Aqui vocês vão poder encontrar mais sobre meus projetos!</p>
           </div>
 
           <div className='mt-4 flex justify-center md:justify-start'>
-            <Button className='w-80 h-10'>Entrar em contato</Button>
+            <Button className='w-80 h-10' onClick={() => redirect('/contact')}>Entrar em contato</Button>
           </div>
         </div>
 
