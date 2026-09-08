@@ -2,6 +2,9 @@ import ProjectCard from '@/components/myComponents/ProjectCard';
 import projectCover from "../../../../public/project_cover.jpg"
 import { TypographyH1, TypographyH4 } from '@/components/ui/typography';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { cn } from 'cn';
+import { buttonVariants } from '@/components/ui/button';
+import Link from 'next/link';
 
 export interface ProjectType {
   title: string
@@ -38,6 +41,12 @@ export default function Projects({ projects }: ProjectsProps) {
         ) : (
           <TypographyH4>Nenhum projeto publicado</TypographyH4>
         )}
+      </div>
+
+      <div className='flex justify-center'>
+        <Link className={cn(buttonVariants({ variant: "default" }))} href='https://github.com/jlucassaldanha' target="_blank">
+          Descobrir mais projetos
+        </Link>
       </div>
     </div>
   )

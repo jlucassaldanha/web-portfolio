@@ -1,9 +1,8 @@
-"use client"
-
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import { TypographyH1 } from '@/components/ui/typography';
-import { redirect } from 'next/navigation';
+import { cn } from 'cn';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -28,7 +27,7 @@ export default function Hero() {
           </div>
 
           <div className='mt-4 flex justify-center md:justify-start'>
-            <Button className='w-80 h-10' onClick={() => redirect('/contact')}>Entrar em contato</Button>
+            <Link className={cn(buttonVariants({ variant: "default" })) + " w-80 h-10"} href='/contact' >Entrar em contato</Link>
           </div>
         </div>
 
