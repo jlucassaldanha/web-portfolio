@@ -1,4 +1,4 @@
-import ButtonLink from '@/components/myComponents/ButtonLink';
+import Link from 'next/link';
 import { TypographyH1 } from '@/components/ui/typography';
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -14,22 +14,38 @@ export default function Contact() {
         </TypographyH1>
       </div>
       <div className='flex flex-col md:flex-row items-center gap-12 md:gap-8'>
-        <div className='flex items-center justify-center gap-5'>
-          <ButtonLink href='https://www.linkedin.com/in/joao-lucas-saldanha/'>
+        <div className='flex items-center justify-center gap-10'>
+          <Link 
+            href='https://www.linkedin.com/in/joao-lucas-saldanha/' 
+            target='_blank'
+            aria-label='LinkedIn'
+          >
             <FaLinkedin size={50}/>
-          </ButtonLink>
+          </Link>
 
-          <ButtonLink href="https://github.com/jlucassaldanha" >
+          <Link 
+            href="https://github.com/jlucassaldanha" 
+            target='_blank'
+            aria-label='GitHub'
+          >
             <FaGithub size={50}/>
-          </ButtonLink>
+          </Link>
 
-          <ButtonLink href="https://wa.me/5553981021846" >
+          <Link 
+            href="https://wa.me/5553981021846" 
+            target='_blank'
+            aria-label='WhatsApp'
+          >
             <FaWhatsapp size={50}/>
-          </ButtonLink>
+          </Link>
 
-          <ButtonLink href="mailto:j.lucassaldanha@gmail.com" >
+          <Link 
+            href="mailto:j.lucassaldanha@gmail.com" 
+            target='_blank'
+            aria-label='E-mail'
+          >
             <SiGmail size={50}/>
-          </ButtonLink>
+          </Link>
         </div>
       </div>
     </div>
