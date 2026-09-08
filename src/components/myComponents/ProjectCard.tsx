@@ -3,7 +3,6 @@ import { Badge } from '../ui/badge';
 import { TypographyH4 } from '../ui/typography';
 import { FaGithub } from "react-icons/fa";
 import DeactivatableLink from './DeactivatableLink';
-import { redirect } from 'next/navigation';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Link from 'next/link';
 

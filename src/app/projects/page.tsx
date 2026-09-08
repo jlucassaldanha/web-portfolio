@@ -1,4 +1,7 @@
 import Projects, { ProjectType } from '@/components/sections/Projects/Projects';
+import timeManagerCover from "../../../public/time_namager_cover.png"
+import ticketDevCover from "../../../public/ticket_dev_cover.png"
+import ticketDevApiCover from "../../../public/ticket_dev_api_cover.png"
 
 const projects: ProjectType[] = [
   {
@@ -6,12 +9,14 @@ const projects: ProjectType[] = [
     description: "Aplicação para controle de horas extras costruída em Next.JS",
     repoUrl: "https://github.com/jlucassaldanha/time-manager-web",
     deployUrl: "https://timemanagerweb.vercel.app",
+    img: timeManagerCover
   },
   {
     title: "TicketDevWebApp",
     description: "Aplicação de publicação de eventos, venda, compra e validação de ingressos.",
     repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
     deployUrl: "https://ticketdevwebapp.vercel.app",
+    img: ticketDevCover
   },
   {
     title: "Time Manager",
@@ -23,6 +28,7 @@ const projects: ProjectType[] = [
     description: "API Rest de publicação de eventos, venda, compra e validação de ingressos.",
     repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
     deployUrl: "https://ticketdevapi.onrender.com/api-docs",
+    img: ticketDevApiCover
   },
   {
     title: "PyTACOAPI",
