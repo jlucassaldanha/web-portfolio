@@ -2,7 +2,9 @@ import ProjectCard from '@/components/myComponents/ProjectCard';
 import projectCover from "../../../../public/project_cover.jpg"
 import { TypographyH1, TypographyH4 } from '@/components/ui/typography';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
-import ButtonLink from '@/components/myComponents/ButtonLink';
+import { cn } from 'cn';
+import { buttonVariants } from '@/components/ui/button';
+import Link from 'next/link';
 
 export interface ProjectType {
   title: string
@@ -42,9 +44,9 @@ export default function Projects({ projects }: ProjectsProps) {
       </div>
 
       <div className='flex justify-center'>
-        <ButtonLink href='https://github.com/jlucassaldanha'>
+        <Link className={cn(buttonVariants({ variant: "default" }))} href='https://github.com/jlucassaldanha' target="_blank">
           Descobrir mais projetos
-        </ButtonLink>
+        </Link>
       </div>
     </div>
   )

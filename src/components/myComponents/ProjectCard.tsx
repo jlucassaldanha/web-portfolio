@@ -4,7 +4,9 @@ import { TypographyH4 } from '../ui/typography';
 import { FaGithub } from "react-icons/fa";
 import DeactivatableLink from './DeactivatableLink';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
-import ButtonLink from './ButtonLink';
+import { cn } from 'cn';
+import { buttonVariants } from '../ui/button';
+import Link from 'next/link';
 
 interface ProjectCardProps {
   title: string
@@ -43,9 +45,9 @@ export default function ProjectCard({ title, description, repoUrl, deployUrl, im
         </DeactivatableLink>
 
         <div className='flex justify-end p-5'>
-          <ButtonLink href={repoUrl}>
+          <Link className={cn(buttonVariants({ variant: "default" }))} href={repoUrl} target="_blank">
             Repositório <FaGithub />
-          </ButtonLink>
+          </Link>
         </div>
       </div>
     </div>
