@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavBar from '@/components/myComponents/NavBar';
 import Footer from '@/components/myComponents/Footer';
+import { ThemeProvider } from '@/components/providers/themeProvider';
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -29,9 +30,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
-        <NavBar />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme='system' disableTransitionOnChange enableSystem>
+          <NavBar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
