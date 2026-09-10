@@ -12,7 +12,7 @@ const projects: ProjectType[] = [
     img: timeManagerCover
   },
   {
-    title: "TicketDevWebApp",
+    title: "TicketDev Web App",
     description: "Aplicação de publicação de eventos, venda, compra e validação de ingressos.",
     repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
     deployUrl: "https://ticketdevwebapp.vercel.app",
@@ -24,14 +24,14 @@ const projects: ProjectType[] = [
     repoUrl: "https://github.com/jlucassaldanha/TimeManager"
   },
   {
-    title: "TicketDevApi",
-    description: "API Rest de publicação de eventos, venda, compra e validação de ingressos.",
+    title: "TicketDev API",
+    description: "API Rest de publicação de eventos, venda, compra e validação de ingressos feita em Node.js.",
     repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
     deployUrl: "https://ticketdevapi.onrender.com/api-docs",
     img: ticketDevApiCover
   },
   {
-    title: "PyTACOAPI",
+    title: "PyTACO API",
     description: "Aplicação de consulta de nutrientes e alimentos escrita em Python",
     repoUrl: "https://github.com/jlucassaldanha/PyTacoAPI",
   },
