@@ -1,5 +1,6 @@
 import Projects, { ProjectType } from '@/components/sections/Projects/Projects';
-import timeManagerCover from "../../../public/time_namager_cover.png"
+import timeManagerCover from "../../../public/time_manager_cover.png"
+import timeManagerApiCover from "../../../public/time_manager_api_cover.png"
 import ticketDevCover from "../../../public/ticket_dev_cover.png"
 import ticketDevApiCover from "../../../public/ticket_dev_api_cover.png"
 
@@ -21,7 +22,9 @@ const projects: ProjectType[] = [
   {
     title: "Time Manager",
     description: "API Rest para controle de horas extras costruída em C# .NET",
-    repoUrl: "https://github.com/jlucassaldanha/TimeManager"
+    repoUrl: "https://github.com/jlucassaldanha/TimeManager",
+    deployUrl: "https://timemanager-api-418m.onrender.com/swagger",
+    img: timeManagerApiCover
   },
   {
     title: "TicketDev API",
