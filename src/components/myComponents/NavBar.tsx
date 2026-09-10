@@ -1,21 +1,22 @@
 import Link from 'next/link';
 import { buttonVariants } from '../ui/button';
 import { cn } from 'cn';
+import { ThemeToggle } from './ThemeToggle';
 
 export default function NavBar() {
   return (
     <header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur'>
-      <div className='max-w-7xl mx-auto flex h-14 items-center px-6'>
+      <div className='max-w-7xl mx-auto flex h-14 items-center px-6 justify-between'>
         <nav className='flex items-center gap-4'>
           <Link 
-            href="/"
+            href="/#hero"
             className={cn(buttonVariants({ variant: "ghost" }))}
           >
             Home
           </Link>
 
           <Link 
-            href="/about"
+            href="/#about"
             className={cn(buttonVariants({ variant: "ghost" }))}
           >
             Sobre
@@ -36,6 +37,8 @@ export default function NavBar() {
             Contato
           </Link>
         </nav>
+
+        <ThemeToggle />
       </div>
     </header>
   )

@@ -1,5 +1,6 @@
 import Projects, { ProjectType } from '@/components/sections/Projects/Projects';
-import timeManagerCover from "../../../public/time_namager_cover.png"
+import timeManagerCover from "../../../public/time_manager_cover.png"
+import timeManagerApiCover from "../../../public/time_manager_api_cover.png"
 import ticketDevCover from "../../../public/ticket_dev_cover.png"
 import ticketDevApiCover from "../../../public/ticket_dev_api_cover.png"
 
@@ -12,7 +13,7 @@ const projects: ProjectType[] = [
     img: timeManagerCover
   },
   {
-    title: "TicketDevWebApp",
+    title: "TicketDev Web App",
     description: "Aplicação de publicação de eventos, venda, compra e validação de ingressos.",
     repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
     deployUrl: "https://ticketdevwebapp.vercel.app",
@@ -21,17 +22,19 @@ const projects: ProjectType[] = [
   {
     title: "Time Manager",
     description: "API Rest para controle de horas extras costruída em C# .NET",
-    repoUrl: "https://github.com/jlucassaldanha/TimeManager"
+    repoUrl: "https://github.com/jlucassaldanha/TimeManager",
+    deployUrl: "https://timemanager-api-418m.onrender.com/swagger",
+    img: timeManagerApiCover
   },
   {
-    title: "TicketDevApi",
-    description: "API Rest de publicação de eventos, venda, compra e validação de ingressos.",
+    title: "TicketDev API",
+    description: "API Rest de publicação de eventos, venda, compra e validação de ingressos feita em Node.js.",
     repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
     deployUrl: "https://ticketdevapi.onrender.com/api-docs",
     img: ticketDevApiCover
   },
   {
-    title: "PyTACOAPI",
+    title: "PyTACO API",
     description: "Aplicação de consulta de nutrientes e alimentos escrita em Python",
     repoUrl: "https://github.com/jlucassaldanha/PyTacoAPI",
   },
