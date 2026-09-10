@@ -27,6 +27,7 @@ export default function ProjectCard({ title, description, repoUrl, deployUrl, im
             src={img}
             alt="Project cover"
             className="relative z-20 aspect-video object-cover rounded-md"
+            priority
           />
         </DeactivatableLink>
       </div>

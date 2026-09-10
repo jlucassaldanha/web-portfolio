@@ -6,10 +6,10 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className='max-w-7xl mx-auto px-0.5 py-16 md:py-32'>
+    <div className='max-w-7xl mx-auto px-6 py-16 md:py-32'>
       <div className='flex flex-col-reverse md:flex-row items-center gap-12 md:gap-8'>
         <div className='w-full md:w-2/3 flex flex-col gap-6 text-center md:text-left'>
-          <div className='w-100'>
+          <div className='w-full'>
             <TypographyH1>
               Olá,<br />
               sou João Lucas,<br /> 
@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
 
           <div className='mt-4 flex justify-center md:justify-start'>
-            <Link className={cn(buttonVariants({ variant: "default" })) + " w-80 h-10"} href='/contact' >Entrar em contato</Link>
+            <Link className={cn(buttonVariants({ variant: "default" })) + " w-full sm:w-80 h-10 text-base"} href='/contact' >Entrar em contato</Link>
           </div>
         </div>
 
