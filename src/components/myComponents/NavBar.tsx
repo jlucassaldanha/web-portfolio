@@ -9,14 +9,14 @@ export default function NavBar() {
       <div className='max-w-7xl mx-auto flex h-14 items-center px-6 justify-between'>
         <nav className='flex items-center gap-4'>
           <Link 
-            href="/"
+            href="/#hero"
             className={cn(buttonVariants({ variant: "ghost" }))}
           >
             Home
           </Link>
 
           <Link 
-            href="/about"
+            href="/#about"
             className={cn(buttonVariants({ variant: "ghost" }))}
           >
             Sobre
