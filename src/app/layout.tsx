@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import NavBar from '@/components/myComponents/NavBar';
 import Footer from '@/components/myComponents/Footer';
 import { ThemeProvider } from '@/components/providers/themeProvider';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
