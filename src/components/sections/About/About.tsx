@@ -8,7 +8,7 @@ export default function About() {
           Sobre mim
         </TypographyH1>
       </div>
-      <div className='flex flex-col md:flex-row items-center gap-12 md:gap-8 bg-secondary text-secondary-foreground p-10'>
+      <div className='flex flex-col md:flex-row items-center gap-12 md:gap-8 bg-secondary text-secondary-foreground p-10 rounded-2xl'>
         <div className='w-full text-center md:text-left'>
           <p>
             Minha experiência abrange o desenvolvimento frontend e backend. Possuo
