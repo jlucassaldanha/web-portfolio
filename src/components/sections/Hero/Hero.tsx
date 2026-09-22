@@ -32,10 +32,14 @@ export default function Hero() {
         </div>
 
         <div className='w-full md:w-1/3 flex justify-center md:justify-end'>
-          <Avatar className='w-56 h-56 md:w-80 md:h-80'>
-            <AvatarImage src="profile.jpg"/>
-            <AvatarFallback>JL</AvatarFallback>
-          </Avatar>
+          <div className='relative inline-block'>
+            <div className='absolute inset-0 -translate-x-4 translate-y-4 rounded-full bg-secondary' />
+            <div className='absolute inset-0 translate-x-4 -translate-y-4 rounded-full bg-secondary' />
+            <Avatar className='w-56 h-56 md:w-80 md:h-80 relative'>
+              <AvatarImage src="profile.jpg"/>
+              <AvatarFallback>JL</AvatarFallback>
+            </Avatar>
+          </div>
         </div>
       </div>
     </div>
