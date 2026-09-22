@@ -36,7 +36,7 @@ export default function Hero() {
             <div className='absolute inset-0 -translate-x-4 translate-y-4 rounded-full bg-secondary' />
             <div className='absolute inset-0 translate-x-4 -translate-y-4 rounded-full bg-secondary' />
             <Avatar className='w-56 h-56 md:w-80 md:h-80 relative'>
-              <AvatarImage src="profile.jpg"/>
+              <AvatarImage src="profile.jpeg"/>
               <AvatarFallback>JL</AvatarFallback>
             </Avatar>
           </div>
