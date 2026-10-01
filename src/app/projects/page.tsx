@@ -15,8 +15,8 @@ const projects: ProjectType[] = [
   {
     title: "TicketDev Web App",
     description: "Aplicação de publicação de eventos, venda, compra e validação de ingressos.",
-    repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
-    deployUrl: "https://ticketdevwebapp.vercel.app",
+    repoUrl: "https://github.com/jlucassaldanha/ticketdevweb",
+    deployUrl: "https://ticketdevweb.vercel.app",
     img: ticketDevCover
   },
   {
