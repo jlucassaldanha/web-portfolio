@@ -6,18 +6,18 @@ import ticketDevApiCover from "../../../public/ticket_dev_api_cover.png"
 
 const projects: ProjectType[] = [
   {
+    title: "TicketDev Web",
+    description: "Aplicação de publicação de eventos, venda, compra e validação de ingressos.",
+    repoUrl: "https://github.com/jlucassaldanha/ticketdevweb",
+    deployUrl: "https://ticketdevweb.vercel.app",
+    img: ticketDevCover
+  },
+  {
     title: "Time Manager Web",
     description: "Aplicação para controle de horas extras costruída em Next.JS",
     repoUrl: "https://github.com/jlucassaldanha/time-manager-web",
     deployUrl: "https://timemanagerweb.vercel.app",
     img: timeManagerCover
-  },
-  {
-    title: "TicketDev Web App",
-    description: "Aplicação de publicação de eventos, venda, compra e validação de ingressos.",
-    repoUrl: "https://github.com/jlucassaldanha/ticketdevweb",
-    deployUrl: "https://ticketdevweb.vercel.app",
-    img: ticketDevCover
   },
   {
     title: "Time Manager",
