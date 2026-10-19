@@ -38,6 +38,12 @@ const projects: ProjectType[] = [
     description: "Aplicação de consulta de nutrientes e alimentos escrita em Python",
     repoUrl: "https://github.com/jlucassaldanha/PyTacoAPI",
   },
+  {
+    title: "BankBills API",
+    description: "Aplicação de consulta de gastos bancários",
+    repoUrl: "https://github.com/jlucassaldanha/BankBills",
+  },
+
 ];
 
 export default function Home() {
