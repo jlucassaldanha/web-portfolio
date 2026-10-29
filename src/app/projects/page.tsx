@@ -3,8 +3,17 @@ import timeManagerCover from "../../../public/time_manager_cover.png"
 import timeManagerApiCover from "../../../public/time_manager_api_cover.png"
 import ticketDevCover from "../../../public/ticket_dev_cover.png"
 import ticketDevApiCover from "../../../public/ticket_dev_api_cover.png"
+import lanceDevApiCover from "../../../public/lance_dev_api_cover.png"
+import lanceDevCover from "../../../public/lance_dev_cover.png"
 
 const projects: ProjectType[] = [
+  {
+    title: "LanceDev Web",
+    description: "Aplicação de leilões web construida em Next.js.",
+    repoUrl: "https://github.com/jlucassaldanha/lancedevweb",
+    deployUrl: "https://lancedevweb.vercel.app",
+    img: lanceDevCover
+  },
   {
     title: "TicketDev Web",
     description: "Aplicação de publicação de eventos, venda, compra e validação de ingressos.",
@@ -27,9 +36,16 @@ const projects: ProjectType[] = [
     img: timeManagerApiCover
   },
   {
+    title: "LanceDev API",
+    description: "API Rest de leilões feita em Node.js.",
+    repoUrl: "https://github.com/jlucassaldanha/LanceDev",
+    deployUrl: "https://lancedev-production.up.railway.app/api-docs/",
+    img: lanceDevApiCover
+  },
+  {
     title: "TicketDev API",
     description: "API Rest de publicação de eventos, venda, compra e validação de ingressos feita em Node.js.",
-    repoUrl: "https://github.com/jlucassaldanha/ticketdevwebapp",
+    repoUrl: "https://github.com/jlucassaldanha/ticketdevapi",
     deployUrl: "https://ticketdevapi.onrender.com/api-docs",
     img: ticketDevApiCover
   },
